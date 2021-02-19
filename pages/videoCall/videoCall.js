@@ -53,7 +53,7 @@ Page({
       inviteCallFlag: true,
       config: this.data.config,
     })
-    this.TRTCCalling.call({ userID: this.data.invitee.userID, type: 2 })
+    this.TRTCCalling.call({ userID: this.data.invitee.userID+"", type: 2 })
   },
 
   bindTRTCCallingRoomEvent: function() {
@@ -161,7 +161,6 @@ Page({
         'company_id':app.globalData.companyID});
         console.log(res.data);
       if(res.status){
-        
         this.data.config.userID=app.globalData.userID;
         this.data.config.userSig=res.data.userSig;
         this.data.invitee={

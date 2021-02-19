@@ -1,4 +1,4 @@
-const SERVER_URL="http://192.168.2.2:8080"
+const SERVER_URL="http://192.168.1.67:8080"
 
 function post(url,data){
   const promise=new Promise((resolve,reject)=>{
